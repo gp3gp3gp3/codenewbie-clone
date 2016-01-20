@@ -1,0 +1,1 @@
+This is a clone of codenewbie.org to practice for a pair programming interview.
