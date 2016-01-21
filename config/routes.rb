@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   resources :users, except: :new
   resources :sessions, only: [:create, :destroy]
+  resources :podcasts
+  resources :posts
+  resources :chats
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
