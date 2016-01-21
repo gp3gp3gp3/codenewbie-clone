@@ -28,6 +28,8 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
+
+gem "faker"
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
