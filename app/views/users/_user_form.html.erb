@@ -1,0 +1,10 @@
+<%= form_for user do |f| %>
+  <%= f.text_field :full_name, placeholder: "Full Name" %>
+  <%= f.text_field :email, placeholder: "Email" %>
+  <%= f.password_field :password, placeholder: "Password" %>
+  <%= f.text_field :twitter_handle, placeholder: "Twitter Handle" %>
+  <%= f.text_field :avatar_url, placeholder: "Avatar URL" %>
+  <%= f.text_field :bio, placeholder: "Bio" %>
+  <%= f.text_field :github_username, placeholder: "Github" %>
+  <%= f.submit "Submit" %>
+<% end %>
