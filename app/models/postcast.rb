@@ -1,3 +1,0 @@
-class Podcast < Story
-
-end
