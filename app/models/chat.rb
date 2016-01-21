@@ -1,4 +1,4 @@
-class Chat < ActiveRecord::Base
+class Chat < Story
 
 
 end

@@ -1,3 +1,3 @@
-class Podcast < ActiveRecord::Base
+class Podcast < Story
 
 end
