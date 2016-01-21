@@ -28,6 +28,12 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    User.find_by(id: params[:id]).destroy
+    session.clear
+    redirect_to :root
+  end
+
   private
 
   def user_params
