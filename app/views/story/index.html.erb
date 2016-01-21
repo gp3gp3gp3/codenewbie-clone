@@ -1,5 +1,5 @@
 <ul>
   <% @stories.each do |story| %>
-    <li><%= story.class %> | <%= story.title %></li>
+    <li><%= story.class %> | <%= link_to story.title, story %></li>
   <% end %>
 </ul>
