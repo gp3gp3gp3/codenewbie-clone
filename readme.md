@@ -1,1 +1,1 @@
-This is a clone of codenewbie.org to practice for a pair programming interview.
+This is a clone of codenewbie.org to practice for a pair programming interview.  Mostly I made this to sandbox using polymorphic associations to build a "recent stories" activity feed.
