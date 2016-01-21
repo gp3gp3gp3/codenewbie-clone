@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20160120225255) do
   enable_extension "plpgsql"
 
   create_table "chats", force: :cascade do |t|
+    t.string   "title",       null: false
     t.string   "description", null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
@@ -34,6 +35,7 @@ ActiveRecord::Schema.define(version: 20160120225255) do
   add_index "links", ["linkable_type", "linkable_id"], name: "index_links_on_linkable_type_and_linkable_id", using: :btree
 
   create_table "podcasts", force: :cascade do |t|
+    t.string   "title",       null: false
     t.string   "description", null: false
     t.integer  "user_id"
     t.datetime "created_at",  null: false
@@ -43,6 +45,7 @@ ActiveRecord::Schema.define(version: 20160120225255) do
   add_index "podcasts", ["user_id"], name: "index_podcasts_on_user_id", using: :btree
 
   create_table "posts", force: :cascade do |t|
+    t.string   "title",      null: false
     t.string   "body",       null: false
     t.integer  "user_id"
     t.datetime "created_at", null: false
@@ -52,7 +55,6 @@ ActiveRecord::Schema.define(version: 20160120225255) do
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
   create_table "stories", force: :cascade do |t|
-    t.string   "title",         null: false
     t.integer  "postable_id"
     t.string   "postable_type"
     t.datetime "created_at",    null: false
