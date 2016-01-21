@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  belongs_to :author, foreign_key: :user_id
+  belongs_to :author, foreign_key: :user_id, class_name: :User
 
   after_create :create_stories
 
