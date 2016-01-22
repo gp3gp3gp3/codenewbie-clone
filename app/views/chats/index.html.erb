@@ -1,0 +1,8 @@
+<ul>
+  <% @chats.each do |chat| %>
+  <li>
+    <h3><%= chat.title %></h3>
+    <h5><%= chat.description %></h5>
+  </li>
+  <% end %>
+</ul>
